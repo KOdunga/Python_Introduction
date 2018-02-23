@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Employee</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1  class="jumbotron text-center">Search For Employee Record</h1>
+<center>
+<a href="/" class=" btn btn-primary"> BACK HOME</a>
+</center>
+<br>
+<br>
+<form action="/search" method="post" class="text-center">
+    <label for="ID Number">ID Number</label>
+    <input type="number" name="idno" placeholder="Enter ID No" required>
+    <br>
+    <input type="submit" class=" =btn btn-success" value="Search"></input><h6>{{ msg }}</h6>
+
+</form>
+</body>
+</html>

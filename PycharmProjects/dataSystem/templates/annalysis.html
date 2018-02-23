@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <!--Use bootstrap 4 from online to style the page.-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<center>
+    <h1> ANALYSIS</h1>
+    <a href="/" class=" btn btn-primary"> BACK HOME</a>
+    <hr>
+    <hr>
+<div>
+    {{ output.to_html(classes = 'table-striped') | safe  }} <!-- use two braces to render the data here. Safe keyword is used to guard against sql injection-->
+                <!-- Botstrap classes allow you to modify a table according to your preferences-->
+</div>
+</center>
+</body>
+</html>

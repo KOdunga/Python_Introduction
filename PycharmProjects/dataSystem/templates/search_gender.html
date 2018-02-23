@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Employee</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1  class="jumbotron text-center">Employee Gender Graph</h1>
+<center>
+<a href="/" class=" btn btn-primary"> BACK HOME</a>
+</center>
+<br>
+<br>
+<form action="/search_gender" method="post" class="text-center">
+    <label for="Gender">Enter Gender</label>
+    <input type="text" name="gender" placeholder="M or F" required>
+    <br>
+    <input type="submit" class=" =btn btn-success" value="Plot ID NO Against DOB"></input><h6>{{ msg }}</h6>
+
+</form>
+</body>
+</html>

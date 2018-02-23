@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save Employee</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1  class="jumbotron text-center">Register New Employees</h1>
+<center>
+<a href="/" class=" btn btn-primary"> BACK HOME</a>
+</center>
+<br>
+<br>
+<form action="/save" method="post" class="text-center">
+    <label for="ID Number">ID Number</label>
+    <input type="number" name="idno" placeholder="Enter ID No" required>
+    <br>
+    <label for="Date of Birth">Date of Birth</label>
+    <input type="date" name="dob" placeholder="Enter Emp Date of Birth" required>
+    <br>
+    <label for="First Name">First Name</label>
+    <input type="text" name="fname" placeholder="Enter First Name" required>
+    <br>
+    <label for="Last Name">Last Name</label>
+    <input type="text" name="lname" placeholder="Enter Last Name" required>
+    <br>
+    <label for="Gender">Gender</label>
+    <br>
+    <input type="radio" name="gender" value="M" required><label for="Gender">Male</label>
+    <input type="radio" name="gender" value="F"><label for="Gender">Female</label>
+    <br>
+    <label for="Date of Joning">Date of Joning</label>
+    <input type="date" name="date_joined" placeholder="Enter Date of Joining" required>
+    <br>
+    <input type="submit" class=" =btn btn-success" value="save record"></input><h6>{{ msg }}</h6>
+     <!-- This is where the Saved message will be rendered-->
+
+</form>
+</body>
+</html>
